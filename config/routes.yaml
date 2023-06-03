@@ -3,3 +3,29 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+# config/routes.yaml
+
+# the "app_lucky_number" route name is not important yet
+
+# config/routes.yaml
+homepage:
+  path: /
+  controller: App\Controller\HomePageController::index
+
+monumentpage:
+    path: /monuments
+    controller: App\Controller\MonumentPageController::index
+
+hotelpage:
+    path: /hotel-page
+    controller: App\Controller\HotelPageController::index
+
+trajetpage:
+    path: /trajet
+    controller: App\Controller\TrajetPageController::index
+
+aboutpage:
+    path: /about
+    controller: App\Controller\AboutpageController::index
+
+

@@ -1,0 +1,47 @@
+.carousel {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  position: relative;
+  margin-right: 10px;
+}
+
+.slide:last-child {
+  margin-right: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  display: none;
+}
+
+.slide:hover img {
+  opacity: 0.6;
+}
+
+.slide:hover .description {
+  display: block;
+}

@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}TourIsen{% endblock %}
+
+{% block body %}
+        <div class="fixed-header">
+            <div class="container">
+                <nav>
+                    <a href="#"><img src="{{asset('asset/img/logo.png')}}" style="width:170px;height:40px;"></a>
+                    <a href="{{path('homepage')}}">Accueil</a>
+                    <a href="{{path('monumentpage')}}">Monuments</a>
+                    <a href="{{path('hotelpage')}}">Hotels</a>
+                    <a href="{{path('trajetpage')}}">Trajets</a>
+                    <a href="{{path('aboutpage')}}">A propos</a>
+                </nav>
+            </div>
+        </div>
+        <div class="container">
+            
+            <h1>Monuments proches de vous :</h1>
+            <div class="carousel">
+            <div class="slides">
+              <div class="slide">
+                <img src="{{asset('asset/img/img1.jpg')}}" alt="Image 1">
+                <div class="description">test!</div>
+                </div>
+            <p>TEST bonjour ceci est un test</p>
+            
+
+        </div>
+{% endblock %}
