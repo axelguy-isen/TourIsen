@@ -28,4 +28,8 @@ aboutpage:
     path: /about
     controller: App\Controller\AboutpageController::index
 
+api:
+    path: /api/test
+    controller: App\Controller\ApiController::index
+    methods: [GET]
 
