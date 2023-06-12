@@ -119,3 +119,168 @@ body {
   font-size: 16px;
   color: #666;
 }
+.fixed-header{
+  width: 100%;
+  position: fixed;
+  left:0;
+  overflow: hidden;
+  background-color: #696969;
+  padding: 10px 0;
+  top: 0;
+  z-index: 9999; 
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+.carousel {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+}
+
+.slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  position: relative;
+  margin-right: 10px;
+}
+
+.slide:last-child {
+  margin-right: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+}
+.slide:nth-child(var(--slide-index)) .description {
+  display: block;
+}
+
+.description {
+  display: none;
+}
+.slide {
+  flex: 0 0 100px; /* Ajustez la taille souhaitée pour les images carrées */
+  scroll-snap-align: start;
+  position: relative;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carousel {
+  width: 100%;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.slide {
+  flex: 0 0 300px;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+}
+.slide:hover img {
+  opacity: 0.6; /* Baisse l'opacité de l'image au survol */
+}
+
+.slide:hover .description {
+  display: block; /* Affiche la description de l'image au survol */
+}
+
+
+.highlight-box {
+      background-color: #696969; /* Couleur de la boîte grise */
+      padding: 10px; /* Espace intérieur de la boîte */
+      border-radius: 5px; /* Coins arrondis de la boîte */
+      display: inline-block;
+      margin-bottom: 10px;
+      margin-left: auto;
+       margin-right: auto;
+
+
+    }
+    
+.highlight-box h1 {
+  color: white;
+  line-height: 0.1;
+}
+
+.highlight-box p {
+      color: white; /* Couleur du texte */
+      margin: 0; /* Supprimer les marges par défaut */
+      
+    }
+
+    .review {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.rating {
+  color: #f1c40f; /* Couleur des étoiles */
+  font-size: 24px;
+}
+
+.star::before {
+  content: '\2605'; /* Code Unicode de l'étoile pleine */
+}
+
+.star.empty::before {
+  content: '\2606'; /* Code Unicode de l'étoile vide */
+}
+
+
+.image-resize {
+  width: 900px;
+  height: 600px;
+}
+
+.container2 {
+  display: grid;
+  justify-items: center;
+}
+

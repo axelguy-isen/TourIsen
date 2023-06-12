@@ -5,6 +5,8 @@ import Home from './pages/home';
 import Conference from './pages/conference';
 import Restaurant from './pages/restaurant';
 import Hotel from './pages/hotel';
+import About from './pages/about';
+import Monument from './pages/monuments';
 import '../assets/styles/app.css';
 
 function App() {
@@ -33,11 +35,13 @@ function App() {
                         <Link className="navbar-brand mr-4 pr-2" href="/">
                             TourIsen
                         </Link>
-                        <Link className="nav-link" href="/parc">
-                            Parcs
+                        <Link className="nav-link" href="/monuments">
+                            Monuments
                         </Link>
                         <Link className="nav-link" href="/hotels">Hotels</Link>
                         <Link className="nav-link" href="/restaurants">Restaurants</Link>
+                        <Link className="nav-link" href="/about">A propos</Link>
+
                     </div>
                 </nav>
             </header>
@@ -45,8 +49,10 @@ function App() {
             <Router>
                 <Home path="/" />
                 <Conference path="/parc" parcs={parcs} />
+                <Monument path="/monuments" />
                 <Hotel path="/hotels" />
                 <Restaurant path="/restaurants" />
+                <About path="/about" />
 
             </Router>
         </div>
